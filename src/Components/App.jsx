@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import Header from "./Layouts/Header";
 import Footer from "./Layouts/Footer";
 import { muscles, exercises } from "../store.js";
-import Exercises from "./Exercises/Exercises";
+import Exercises from "./Exercises";
 
 export default class extends Component {
   state = {
@@ -36,6 +36,8 @@ export default class extends Component {
   };
 
   render() {
+    console.log(this.getExercisesByMuscles());
+
     const exercises = this.getExercisesByMuscles(),
       { category, exercise } = this.state;
 
