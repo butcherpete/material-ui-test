@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import Header from "./Layouts/Header";
 import Footer from "./Layouts/Footer";
 import { muscles, exercises } from "../store.js";
-import Exercises from "./Exercises";
+import Exercises from "./Exercises/Index";
 
 export default class extends Component {
   state = {
